@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta char set="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Educational Background</title>
+  <style>
+    body {
+      font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+      background-color: #f3f6f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #003366;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    h1 {
+      color: #003366;
+      margin: 30px 0;
+    }
+
+    .school-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 320px;
+      margin: 20px;
+      padding: 20px;
+      vertical-align: top;
+      transition: transform 0.3s;
+    }
+    .school-card:hover {
+      transform: scale(1.03);
+    }
+    img {
+      width: 75%;
+      height: 220px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #003366;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #333;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #0055aa;
+    }
+
+    .details {
+      display: none;
+      text-align: left;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <
+    <a href="#primary">Primary</a>
+    <a href="#secondary">Secondary</a>
+    <a href="#university">University</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <h1>My Educational Background</h1>
+
+  <div class="school-card" id="primary">
+    <h2>Nzambani Primary School</h2>
+    <img src="C:\Users\user\Pictures\FB_IMG_1734370425392 (1).jpg" alt="Nzambani Primary School">
+    <p><strong>Years Attended:</strong> 2010 - 2016</p>
+    <p><strong>Email:</strong> info@nzambaniprimaryschool.ac.ke</p>
+    <button class="btn" onclick="toggleDetails('primaryDetails')">View More</button>
+    <div class="details" id="primaryDetails">
+      <p>This is where my academic journey began. At Nzambani Primary School, I developed strong foundations in reading, writing, and mathematics, and learned the importance of teamwork and discipline.</p>
+    </div>
+  </div>
+
+  <div class="school-card" id="secondary">
+    <h2>Kimanza Secondary School</h2>
+    <img src="C:\Users\user\Pictures\WhatsApp Image 2025-09-29 at 21.31.45_e4c23461.jpg" alt="Kimanza Secondary School">
+    <p><strong>Years Attended:</strong> 2017 - 2020</p>
+    <p><strong>Email:</strong> info@kimanzasecondaryschool.ac.ke</p>
+    <button class="btn" onclick="toggleDetails('secondaryDetails')">View More</button>
+    <div class="details" id="secondaryDetails">
+      <p>At Kimanza Secondary School, I strengthened my academic discipline and participated in science fairs, leadership roles, and technology clubs that inspired my passion for computing.</p>
+    </div>
+  </div>
+  <div class="school-card" id="university">
+    <h2>Meru University of Science and Technology</h2>
+    <img src="C:\Users\user\Pictures\download.jpeg" alt="Meru University of Science and Technology">
+    <p><strong>Course:</strong> BSc in Computer Science</p>
+    <p><strong>Years Attended:</strong> 2021 - Present</p>
+    <p><strong>Email:</strong> info@must.ac.ke</p>
+    <button class="btn" onclick="toggleDetails('universityDetails')">View More</button>
+    <div class="details" id="universityDetails">
+      <p>I am currently pursuing a Bachelor of Science in Information Technology at Meru University. My studies focus on software development, artificial intelligence, and web technologies.</p>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>Created by Gabriel Nzioka &copy; 2025</p>
+    <p>Contact me: <a href="mailto:gabrielnzioka3@gmail.com">gabrielnzioka3@gmail.com</a></p>
+    <p>
+      <a href="mailto:?subject=Check%20out%20my%20Education%20Background&body=Hello!%20You%20can%20view%20my%20education%20background%20page%20here:%20https://gabrielnzioka.github.io/education-page/">
+        📧 Share this page with someone
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    function toggleDetails(id) {
+      const section = document.getElementById(id);
+      if (section.style.display === "block") {
+        section.style.display = "none";
+      } else {
+        section.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
